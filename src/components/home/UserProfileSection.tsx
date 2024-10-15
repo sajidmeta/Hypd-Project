@@ -39,21 +39,23 @@ const UserProfileSection = () => {
 
 
   return (
-    <div className='w-[90%] m-auto'>
+    <div className='lg:w-[90%] m-auto'>
       <div className=" flex justify-between mt-6 items-center px-4 ">
         <h1 className="font-semibold text-3xl">User Profiles</h1>
 
-        <button className="py-2 px-4 bg-[#FFB604] rounded-md shadow text-white font-semibold">
+        <button className="py-2 px-4 bg-[#FFB604] rounded-md shadow text-white font-semibold sm:block hidden">
           View All Users
         </button>
         </div>
         <p className="mt-4 text-xl text-[#475467] px-4">We’re always on the lookout for passionate, dynamic, and talented individuals.</p>
      
-     
+        <button className="py-2 px-4 border mt-4 border-neutral-400 text-[#344054] rounded-md  font-semibold sm:hidden block w-[92%] m-auto">
+          View All Users
+        </button>
 
       {/* <div className="my-16 flex gap-7"> */}
 
-      <Slider { ...settings } className='my-16' >
+      <Slider { ...settings } className='my-12' >
 
         <div className='px-4'>
           <div className="w-full  relative ">
@@ -140,6 +142,11 @@ const UserProfileSection = () => {
           </div>
 
           </Slider>
+
+          <div className='flex gap-4 mx-4'>
+             <img src="/asset/left-cursor.svg" alt="" className='cursor-pointer' />
+             <img src="/asset/right-arrow.svg" alt="" className='cursor-pointer'/>
+          </div>
 
       {/* </div> */}
       </div>

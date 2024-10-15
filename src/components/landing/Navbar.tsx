@@ -7,9 +7,7 @@ const Navbar = () => {
     <nav className="bg-pink-50  py-5 px-6 rounded-full flex items-center justify-between ">
       {/* Logo */}
       <div className='flex gap-10'>
-      <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
-        HYPD
-      </div>
+      <img src="/asset/Logo.svg" alt="" />
        {/* Links */}
       <div className="flex space-x-8 items-center">
         <div className="flex space-x-10">
